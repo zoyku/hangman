@@ -2,7 +2,6 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"math/rand"
 	"os"
 	"strconv"
@@ -135,17 +134,6 @@ func contains(s string, guess string) bool {
 		}
 	}
 	return false
-}
-
-func getLetter(guess []string) string {
-	fmt.Println("Enter letter:", guess)
-	var first string
-	fmt.Scanln(&first)
-	for len(first) > 1 {
-		fmt.Println("Invalid input. Please enter only one character.")
-		fmt.Scanln(&first)
-	}
-	return first
 }
 
 func updateGuess(guess []string, letter string, word string) bool {
