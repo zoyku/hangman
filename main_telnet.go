@@ -13,6 +13,8 @@ import (
 	"github.com/reiver/go-telnet"
 )
 
+//git conttrol
+
 type myHandler struct{}
 
 func (handler myHandler) ServeTELNET(ctx telnet.Context, w telnet.Writer, r telnet.Reader) {
